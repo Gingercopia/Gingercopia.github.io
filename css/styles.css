@@ -1,0 +1,462 @@
+/*Flex Container Color
+rgb(255 255 255 / 0.8); Light Purple Gray
+
+Default Background Color
+#413E39 - deep brown purple
+
+H3
+#FFE595 Jasmine [light yellow] / rgb(255,229,149)
+
+Sections/Headers
+#F7BF50 DEEP GOLDENROD / rgb(247,191,80)
+
+Sections/Headers
+#241C0F Smokey Black / rgb(36,28,15)
+
+Paragraph Color
+#F9F9F9 Seasalt [whitish lavendar] / rgb(249,249,249)
+
+
+font-family: 'Barriecito', cursive;
+font-family: 'Poppins', sans-serif;
+
+HEX to RGB converter
+https://www.webfx.com/web-design/hex-to-rgb/
+
+*/
+
+html {
+    font-size: 18px;
+}
+
+/*------------ Global Styles ----------------------------
+-------------------------------------------------------*/
+
+/*this is the BOX MODEL FIX when doing layouts*/
+html {
+    box-sizing: border-box;
+    font-size:62.5%;
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* This is the viewport size */
+
+  html, body {
+    height: 100%;
+}
+
+body {
+    color:#413E39;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    background: rgb(255 255 255 / 0.8);
+}
+
+h1 {
+    font-family: 'Barriecito', cursive;
+    font-size: 100px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 6.7rem;
+}
+header h1 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    padding: 0px 20px;
+    font-size: 6.7rem;
+    text-align: left;
+}
+h2 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    font-size: 5.2rem;
+    text-align: center;
+
+}
+header h2 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    padding: 0px 40px;
+    font-size: 3.2rem;
+    text-align: left;
+}
+
+h3 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    padding: 3px;
+    font-size: 3rem;
+    text-align: left;
+}
+
+header h3 {
+    margin: 0 auto;
+    font-family: 'Poppins', cursive;
+    padding: 0px 40px;
+    font-size: 3.2rem;
+    text-align: left;
+}
+
+
+
+
+img{
+    width:300px;
+}
+
+a{
+    color: #F7BF50;
+}
+
+a:hover{
+    text-decoration: #FFE595;
+}
+
+a:active{
+    background-color: #F9F9F9;
+}
+
+.home a {
+    color:#241C0F;
+    background-color: #FFE595;
+    outline:3px solid #241C0F;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.home a:hover {
+    background-color: #413E39;
+    color: #FFE595;
+    text-decoration: underline;
+}
+
+
+/*--- HOME Page -----------------------------
+---------------------------------------------*/
+
+.home {
+    background: url(../images/SchoolOfAthens.jpg)no-repeat;
+    background-size: cover;
+    background-color: #413E39;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(255 255 255 / 0.85);
+    padding: 40px;
+}
+
+@media screen and (max-width:762px) {
+    .home .content-wrapper {
+        padding:10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/*------------RESUME PAGE----------------------
+----------------------------------------------*/
+
+.resume header::before {
+    background: url(../images/mountainRoad.jpg)center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 200px;
+}
+
+.PDFLink {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    background-color: #241C0F;
+    border: groove 1em #FFE595 ;
+    padding: 4px;
+    border-radius: 40% 20% /40% 20%;
+    text-decoration: none;
+    font-size: 1.8rem;
+
+}
+.PDFLink:hover {
+    color: #241C0F;
+    background-color: #F7BF50;
+}
+
+@media screen and (max-width: 1230px){
+    .PDFLink {
+        position: absolute;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    .resume header::before {
+        height: 100px;
+    }
+    h1 {
+        font-size: 4.7rem;
+        
+    }
+    h2 {
+        font-size: 4rem;
+        padding: 10px;
+    }
+    h3 {
+        font-size: 3.1rem;
+    }
+}
+
+
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 10px 0px 0px;
+    max-width: 800px;
+}
+
+/*(((((((((((((   (CV)    ))))))))))))))
+-----------------------------------------*/
+
+.workItem {
+    margin: 0;
+    padding: 10px 40px 20px;
+    border-bottom: dashed #F7BF50;
+}
+
+
+
+.workDetails h3 {
+    font-weight: 100;
+}
+
+.workSummary ul {
+margin: 0 auto;
+padding: 0px;
+font-size: 1.5rem;
+list-style: none;
+}
+
+.workSummary ul li {
+padding: 10px 0px;
+font-size: 1.8rem;
+margin-top: 0;
+}
+
+.workExperience {
+    background-color:rgb(36,28,15, .9) ;
+    color:#F9F9F9;
+}
+
+@media screen and (min-width:660px){
+    .workItem{
+        border: 4px solid #241C0F;
+        display: grid;
+        grid-template-columns: 300px 2fr;
+        column-gap: 20px;
+        padding: 18px;
+        Margin: 0;
+      
+      }
+      .workDetails p {
+
+        margin: 3px 30px;
+        padding: 10px;
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+
+/*(((((((((((((  (Portfolio)   ))))))))))))))
+-----------------------------------------*/
+
+/*!!!!!! Make Portfolio section a Grid or FLEXBOX to avoid wrapping of text*/
+
+
+
+/* .flexProjectDesc {
+    flex-grow: 2;
+} */
+.portfolio h2 {
+    background-color: #241C0F;
+    color: #F7BF50;
+    border-bottom: 2px dashed #241C0F;
+}
+.portfolio {
+    background-color: #FFE595;
+    color: #241C0F;
+    display: flow-root;
+    margin: 10px 0px 0px;
+    padding: 30px;
+}
+
+.portfolio a {
+    background: #241C0F;
+    color: #F7BF50;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+.portfolio a:hover {
+    background-color: rgba(36, 28, 15, 80%);
+    text-decoration: underline;
+}
+
+ .portfolio .btn {
+    background: #241C0F;
+    color: #F7BF50;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    line-height: 1.4;
+}
+
+.portfolio a {
+    color: black;
+}
+
+.portfolio-item {
+    overflow:hidden;
+    border-bottom: 2px dashed #241C0F;
+    padding: 25px 0;
+    margin: 40px 0;
+ }
+
+.portfolio-item img {
+    width: 220px;
+    height: 240px;
+    object-fit: contain;
+}
+
+.portfolio-item h3 {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 760px){
+    .portfolio-item {
+        display:flow-root;
+    }
+    .portfolio-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 522px) and (max-width: 759px) {
+    .projectWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .project-item img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+/*<<<<<<<<<<<<<<<<EDUCATION>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.educationItem p {
+    margin: 0;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
+}
+.educationItem {
+    background-color: #F9F9F9;
+    border-top: solid #F7BF50;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-direction:column;
+    flex: 1 1 auto;
+    align-items: left;
+}
+.education h2 {
+    padding-bottom: 30px;
+}
+
+/*<<<<<<<<<<<<<<<<Volunteer>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.volunteer {
+    background-color:#FFE595;
+    margin: 0;
+    padding: 18px;
+    border: 4px solid #241C0F;
+}
+
+.volunteerItem {
+    padding: 4px;
+}
+.volunterItem p {
+    line-height: 0px;
+    padding: 10px;
+}
+.volunteer h3 {
+    line-height: 8px;
+}
+
+/*-------------  FOOTER  ------------------
+-----------------------------------------*/
+
+footer {
+    background-color: #241C0F;
+    color: #F9F9F9;
+    border-top: solid #F7BF50;
+}
+
+.socialAndDesign{
+    list-style-type: none;
+    padding: 0;
+}
+.socialAndDesign li{
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.socialAndDesign img {
+    width: 48px;
+}
+
+.socialAndDesign img:hover {
+    outline: 12px solid #F7BF50;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 770px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 769px) {
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}

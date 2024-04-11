@@ -1,0 +1,302 @@
+/*
+COLOR PALETTE
+#517664 Hooker's Green [blueish green] / rgb(81,118,100)
+
+
+
+#82846D Reseda Green [earthy green] / rgb(130,132,109)
+#1a2503 MOSSY GREEN / rgb(26,37,3)
+
+Flex Container Color
+rgb(255 255 255 / 0.8); Light Purple Gray
+
+Default Background Color
+#413E39 - deep brown purple
+
+H3
+#FFE595 Jasmine [light yellow] / rgb(255,229,149)
+
+Sections/Headers
+#F7BF50 DEEP GOLDENROD / rgb(247,191,80)
+
+Sections/Headers
+#241C0F Smokey Black / rgb(36,28,15)
+
+Paragraph Color
+#F9F9F9 Seasalt [whitish lavendar] / rgb(249,249,249)
+
+
+font-family: 'Barriecito', cursive;
+font-family: 'Poppins', sans-serif;
+
+HEX to RGB converter
+https://www.webfx.com/web-design/hex-to-rgb/
+
+*/
+
+/*-------ROOT TEXT SIZE ------*/
+html {
+    font-size: 18px;
+}
+
+/* Global Styles
+-------------------------------------------------------*/
+
+/*this is the BOX MODEL FIX when doing layouts*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* This is the viewport size */
+html, body {
+    height: 100%;
+}
+
+body {
+    color:#413E39;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    background: rgb(255 255 255 / 0.8);
+}
+
+h1 {
+    font-family: 'Barriecito', cursive;
+    font-size: 100px;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+
+
+img{
+    width:300px;
+}
+
+a{
+    color: #F7BF50;
+}
+
+a:hover{
+    text-decoration: #FFE595;
+}
+
+a:active{
+    background-color: #F9F9F9;
+}
+    /* updates all BLOCK ELEMENTS */
+
+h2 {
+    margin: 0 auto;
+    font-family: 'Barriecito', cursive;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: left;
+
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px 0; 
+    /* 0 only affects sides not top and bottom */
+    max-width: 800px;
+}
+
+/* Home
+-------------------------------------------*/
+
+.home {
+    background: url(../images/SchoolOfAthens.jpg)no-repeat;
+    background-size: cover;
+    background-color: #413E39;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(255 255 255 / 0.85);
+    padding: 40px;
+}
+
+/* Summary
+-------------------------------------------------------*/
+
+
+
+/* Tagline Class ------------------------
+-------------------------------------------------------*/
+
+
+
+/* Resume
+----------------------------------------*/
+.resume header::before {
+    background: url(../images/mountainRoad.jpg)center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 200px;
+}
+
+
+.PDFLink {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    background-color: #241C0F;
+    border: groove 1em #FFE595 ;
+    padding: 4px;
+    border-radius: 40% 20% /40% 20%;
+    text-decoration: none;
+
+}
+.PDFLink:hover {
+    color: #241C0F;
+    background-color: #F7BF50;
+}
+
+
+
+/* .resume header h1 {
+    color: #F7BF50;
+    background-color: #241C0F;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.resume header p {
+    color: #F7BF50;
+    background-color: #241C0F;
+}
+
+.resume header h2 {
+    color: #241C0F;
+    background-color: rgb(247,191,80, 0.9);
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.resume header ul {
+    padding-left: 160px;
+} */
+
+/* Portfolio Class ------------------
+-------------------------------------------------------*/
+.portfolio h2 {
+    background-color: #241C0F;
+    color: #F7BF50;
+    border-bottom: 2px dashed #241C0F;
+}
+.portfolio {
+    background-color: #FFE595;
+    color: #241C0F;
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.portfolio a {
+    background: #241C0F;
+    color: #F7BF50;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+.portfolio a:hover {
+    background-color: rgba(36, 28, 15, 80%); 
+    text-decoration: underline;
+}
+
+
+/* .portfolio .btn { greater specificity since using class of btn. add this class to html */
+    /* background: #241C0F;
+    color: #F7BF50;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.portfolio a {
+    color: black;
+}
+
+.portfolio-item { /*this performs a CLEAR of float so stacked now*/
+    /* display:flow-root;
+    overflow:hidden;
+    /*border-bottom: 2px dashed #241C0F;*/
+    /* padding: 25px 0;
+    margin: 40px 0;  */
+/* } *
+
+/* .portfolio-item img {
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.portfolio-item h3 {
+    margin-top: 0;
+} */
+-----------------
+/* Work Experience
+-------------------------------------------------------*/
+
+.workItem {
+    display: grid;
+    grid-template-columns: 2fr;
+    column-gap: 20px;
+}
+
+/* Education Class
+-------------------------------------------------------*/
+
+
+/* Contact Info/Footer
+-------------------------------------------------------*/
+
+footer {
+    background-color: #241C0F;
+    color: #F9F9F9;
+    border-top: solid #F7BF50;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;    
+}
+
+.socialAndDesign{
+    list-style-type: none;
+}
+.socialAndDesign li{
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.socialAndDesign img {
+    width: 48px;
+}
+
+.socialAndDesign img:hover {
+    outline: 12px solid #F7BF50;
+    opacity: 0.7;
+}
+
+
+
+/*
+-------------------------------------------------------*/
+
+
