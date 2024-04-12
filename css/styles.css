@@ -396,23 +396,23 @@ margin-top: 0;
 .volunteer {
     color:#F9F9F9;
     background-color:#241C0F;
-    margin: 0px 0px 30px 0px;
-    padding: 18px;
+    margin: 0px 0px 50px;
+    padding: 15px;
     border: 4px solid #FFE595;
-    font-weight: 100;
-    letter-spacing: 0.06em;
 }
-
-.volunteerItem {
-    padding: 4px;
-}
-.volunterItem p {
-    line-height: 0px;
-    padding: 10px;
+.volunteer h2 {
+    background-color: #F7BF50;
+    color: #241C0F;
 }
 .volunteer h3 {
-    line-height: 8px;
-    }
+    padding: 10px 0px 0px;
+}
+
+.volunteerItem p {
+    margin: 0 auto;
+    padding: 0px 30px;
+   
+}
 
 /*-------------  FOOTER  ------------------
 -----------------------------------------*/
