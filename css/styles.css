@@ -122,19 +122,7 @@ a:active{
     background-color: #F9F9F9;
 }
 
-.home a {
-    color:#241C0F;
-    background-color: #FFE595;
-    outline:3px solid #241C0F;
-    padding: 8px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.home a:hover {
-    background-color: #413E39;
-    color: #FFE595;
-    text-decoration: underline;
-}
+
 
 
 /*--- HOME Page -----------------------------
@@ -445,6 +433,27 @@ footer {
 .socialAndDesign img:hover {
     outline: 12px solid #F7BF50;
     opacity: 0.7;
+}
+.summary a {
+    background: #FFE595;
+    color:#241C0F;
+    outline:3px solid #241C0F;
+    padding: 0px 4px;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+.summary a:hover {
+    background: #413E39;
+    color: #FFE595;
+    text-decoration: none;
+}
+.socialAndDesign a {
+    /* background: #FFE595; */
+    color:#241C0F;
+    outline:3px solid #241C0F;
+    padding: 0px 4px;
+    text-decoration: underline;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 770px){
